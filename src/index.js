@@ -1,7 +1,7 @@
 module.exports = function () {
   var inquirer = require('inquirer');
   var Rx = require('rxjs');
-  var livestreamer = require('./livestreamer');
+  var streamlink = require('./streamlink');
 
   var state = {};
 
@@ -15,7 +15,7 @@ module.exports = function () {
     	console.error(err)
     },
     function (e) {
-      livestreamer(state.url, state.quality, state.screen);
+      streamlink(state);
     }
   );
 

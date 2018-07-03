@@ -20,6 +20,18 @@ module.exports = function (prompts, state) {
 			{
 				name: 'TV Catchup',
 				value: 'tvcatchup'
+			},
+			{
+				name: 'Mixer',
+				value: 'mixer'
+			},
+			{
+				name: 'Arbitrary',
+				value: 'arbitrary'
+			},
+			{
+				name: 'Stream URL',
+				value: 'streamurl'
 			}
 		]
 	});
