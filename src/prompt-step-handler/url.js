@@ -11,7 +11,11 @@ module.exports = function (prompts, state) {
 		streamlinkCheckCmd = `streamlink --stream-url '${state.url}'`;
 	}
 
+	console.log('[d] ' + streamlinkCheckCmd);
+
 	exec(streamlinkCheckCmd, (err, stdout, stderr) => {
+		console.log(stdout);
+		
 		if (err) {
 		 	return;
 		}
