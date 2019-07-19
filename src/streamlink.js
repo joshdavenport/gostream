@@ -15,7 +15,7 @@ module.exports = function (state) {
 
 	var streamCmd = `streamlink ${extraFlags}`;
 	streamCmd += ' --hls-segment-threads 4 --hls-live-edge 6 --stream-segment-threads 4 --twitch-disable-ads';
-	streamCmd += ` --player="'/Applications/mpv.app/Contents/MacOS/mpv' --no-border --ontop --screen=${screen} --input-media-keys=no"`;
+	streamCmd += ` --player="'/Applications/mpv.app/Contents/MacOS/mpv' --no-border --no-osc --ontop --screen=${screen} --input-media-keys=no"`;
 	streamCmd += ` '${url}' ${quality}`;
 
 	console.log(streamCmd);
