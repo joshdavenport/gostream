@@ -9,11 +9,7 @@ module.exports = function (prompts, state) {
 			return;
 		}
 
-		var displayMatches = stdout.match(/Resolution: /g);
-
-		if(!displayMatches) {
-			throw new Error('Couldn\'t establish display count');
-		}
+		var displayMatches = stdout.match(/Resolution: /g) || [];
 
 		var displayCount = displayMatches.length,
 			displayChoices = [],
