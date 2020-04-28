@@ -9,7 +9,7 @@ module.exports = function (prompts, state) {
 			return;
 		}
 
-		var displayMatches = stdout.match(/Resolution: /g) || [];
+		var displayMatches = stdout.match(/Resolution: /g) || ['Resolution: Unknown'];
 
 		var displayCount = displayMatches.length,
 			displayChoices = [],
