@@ -17,7 +17,7 @@ module.exports = function (prompts, state) {
 
 		while(displayCount > 0) {
 			displayChoices.push({
-				name: `Screen ${i}`,
+				name: `Screen ${i + 1}`,
 				value: i
 			});
 
